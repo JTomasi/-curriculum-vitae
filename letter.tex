@@ -1,0 +1,135 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{3498DB}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+ \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Justin Tomasi}{}
+\position{Mobile Robotics, Computer Vision, Machine Learning, State Estimation}
+\address{52 Westbury Ave, London, Ontario, Canada, N6J 3G1}
+
+\mobile{(+1) 519 870 0649}
+\email{jltomasi11@gmail.com}
+%\homepage{justintom.net}
+\github{JTomasi}
+\linkedin{justintomasi}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Rivian Recruitment Team}
+  {Rivian\\Palo Alto, CA, USA}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Perception Engineer - Localization}
+% How the letter is opened
+\letteropening{Dear Rivian Recruitment Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Justin Tomasi~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+Hi! My name is Justin Tomasi and I am very excited to apply for the `Perception Engineer - Localization' position at Rivian. My education, experience, and interest in autonomous vehicles, particularly working with perception sensors and localization algorithms, make me an ideal candidate for this position. I recently completed a master’s degree in aerospace engineering with a focus on autonomous vehicles at the University of Toronto where I studied in the Space and Terrestrial Autonomous Robotics Systems lab. My work focused on improving visual perception and localization algorithms for autonomous vehicles operating under challenging lighting conditions through the use of deep learning. I am looking forward to transitioning into a role in industry, working on deployable, real-world autonomous systems.  
+
+\lettersection{Why Rivian?}
+Why Rivian? Because I really admire Rivian's approach to building an environmentally responsible vehicle. Rivian is tackling the challenge of electrifying the most polluting vehicles on the road, the same type of vehicles that many outdoor enthusiasts own. This is a uniquely noble and ambitious goal that really interests me. Rivian is also incorporating self-driving capabilities into their vehicles, which is a passion of mine and an area in which I have relevant experience. By constructing a custom electric vehicle, Rivian is uniquely positioning itself to be one of the few responsible automotive car manufactures that will succeed in the self-driving space. For these reasons, I would love the opportunity to contribute to solving the incredibly challenging and ambitious goal of self-driving at Rivian. 
+
+\lettersection{Why Me?}
+My master's project focused on improving the robustness of visual perception for autonomous vehicles under challenging conditions and has provided me with a wide breadth of experiences that will allow me to succeed in a role with the perception team at Rivian. These experiences include the development and implementation of both fundamental and novel algorithms in perception, state estimation, localization, deep learning, and computer vision for self-driving applications. Specifically, I have become intimately familiar with modern visual odometry and visual SLAM systems, and how deep learning can be used to augment and improve these classical techniques. My project work also exposed me to the understated challenges of testing and deploying real-world autonomous systems such as accurately calibrating sensors, troubleshooting hardware issues, and conducting real-world experiments. My project culminated in the development of a neural network based camera perception system using PyTorch that predicts environmental lighting change to maximize the number of matchable image features and operates in real-time. Additionally, I have hands-on experience working with various robotic sensors including cameras, LIDARs, GPS-IMUs, and wheel odometers. I have developed proficiency with a wide assortment of common robotics tools for interacting with these sensors such as ROS, OpenCV, and PCL. Finally, I have a strong C++ and Python software development and algorithms background. My expertise in robot perception and localization and my desire to work on autonomous systems make me an ideal candidate for this position at Rivian. Thank you for your consideration. I look forward to hearing from you.
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
